@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Building Docker Container') {
             steps {
-                sh 'sudo docker run -d -p 3000:80 tutum/hello-world'
+                sh 'docker run -d -p 3000:80 tutum/hello-world'
                 echo 'Container running on port 3000'
             }
         }
