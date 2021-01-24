@@ -10,6 +10,7 @@ pipeline {
         stage('Building Docker Container') {
             steps {
                 sh 'touch hi.txt'
+                sh 'pwd'
                 echo 'Container running on port 3000'
             }
         }
